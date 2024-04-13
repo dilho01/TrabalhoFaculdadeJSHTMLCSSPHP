@@ -16,14 +16,15 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 250px;
-    height: 250px;
+    width: 270px;
+    height: 270px;
     text-align: center;
     background-color: rgb(50, 230, 221);
     border-radius: 100%;
     animation: registrador-movimento 5s infinite linear;
     padding: 20px;
 }
+
 
 @keyframes registrador-movimento {
     0% {
@@ -38,50 +39,41 @@ body {
 }
 
 .registrador button {
-    margin-top: 20px;
+    margin-top: 30px;
     padding: 10px 20px;
     background-color: white;
     border: none;
-    border-radius: 5px;
+    border-radius: 10px;
     cursor: pointer;
     font-family:"Lilita One", sans-serif;
     font-weight: 400px;
     font-style: normal;
 
 }
-.button-container {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    margin-top: 10%;
-}
 .registrador button:hover {
     background-color: #000000;
     color: aliceblue;
 }
 label{
-    width: 150px;
-    height: 150px;
     font: 1.5rem sans-serif;
     font-family:"Lilita One", sans-serif;
     font-weight: 400px;
     font-style: normal;
+    margin-bottom: 8px;
+    margin-bottom: 8px;
 }
 input{
     width: 200px;
-    height: 80px;
-    border-bottom: 2px solid #070707;
+    height: 25px;
+    border-bottom: 1.8px solid #070707;
+    border-radius: 5px;
 }
 input:hover {
-    border-bottom: 2px solid #00ffbf;
+    border-bottom: 3px solid #00ffbf;
   }
 
 .registrador:hover {
     background-color: #f500fd;
-}
-
-.registrador:active {
-    background-color: #00ffbf;
 }
 
 

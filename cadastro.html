@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <!--CSS-->
+    <link rel="stylesheet" href="./style/mainCadastro.css">
+    <!--font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="container">
+    <div class="container-1">
+        <div class="resgistrador">
+            <h1>Cadastro</h1>
+            <div>
+                <form>
+                    <label for="nome">Nome</label>
+                    <input type="text" name="nome" id="nome">
+                    <label for="sobrenome">Sobrenome</label>
+                    <input type="text" name="nome" id="sobrenome">
+                </form>
+            </div>
+            <div>
+                <form>
+                    <label for="Email">Email</label>
+                    <input type="text" name="email" id="email">
+                    <label for="senha">senha</label>
+                    <input type="password" name="senha" id="senha">
+                </form>
+            </div>
+            <div class="button-container">
+                <button type="button" onclick="voltar()">voltar</button>
+                <button type="button" onclick="salvar()">salvar</button>
+            </div>
+    </div>    
+</div>    
+
+
+
+    <!--JS-->
+    <script src="./src/mainCadastro.js"></script>
+</body>
+</html>

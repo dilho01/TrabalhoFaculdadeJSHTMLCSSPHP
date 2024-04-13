@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
     <!-- CSS -->
-    <link rel="stylesheet" href="./style/main.css">
+    <link rel="stylesheet" href="./style/mainlogin.css">
     <!--font-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -20,13 +20,13 @@
                 <label for="senha">Senha</label>
                 <input type="password" id="senha" name="senha" class="senha">
                 <div class="button-container">
-                    <button>Não tenho cadastro</button>
-                    <button type="submit">Entrar</button>
+                    <button type="button" onclick="NaoCadastro()">Não tenho cadastro</button>
+                    <button type="submit" onclick="entra()">Entrar</button>
                 </div>
             </form>
         </div>
     </div>
     <!-- JS -->
-    <script src="./src/main.js"></script>
+    <script src="./src/mainLogin.js"></script>
 </body>
 </html>

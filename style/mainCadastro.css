@@ -1,0 +1,78 @@
+body {
+    background-image: url("https://www.shutterstock.com/shutterstock/photos/2128959116/display_1500/stock-vector-abstract-waving-particle-technology-background-design-abstract-wave-moving-dots-flow-particles-hi-2128959116.jpg");
+    margin: 0;
+    padding: 0;
+}
+h1{
+    font: 2rem sans-serif;
+    font-family:"Lilita One", sans-serif;
+    font-weight: 400px;
+    font-style: normal;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+}
+.resgistrador {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 360px;
+    height: 360px;
+    text-align: center;
+    background-color: rgb(50, 230, 221);
+    border-radius: 100%;
+    animation: registrador-movimento 7s infinite linear;
+    padding: 20px;
+}
+@keyframes registrador-movimento {
+    0% {
+        border-radius: 50%;
+    }
+    50% {
+        border-radius: 0;
+    }
+    100% {
+        border-radius: 50%;
+    }
+}
+.resgistrador:hover {
+    background-color: #f500fd;
+}
+
+.resgistrador button {
+    padding: 10px 20px;
+    background-color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family:"Lilita One", sans-serif;
+    font-weight: 400px;
+    font-style: normal;
+
+}
+.resgistrador button:hover {
+    background-color: #000000;
+    color: aliceblue;
+}
+label{
+    font: 1.5rem sans-serif;
+    font-family:"Lilita One", sans-serif;
+    font-weight: 400px;
+    font-style: normal;
+    margin-bottom: 5px;
+}
+input{
+    width: 200px;
+    height: 20px;
+    border-bottom: 1.8px solid #070707;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+input:hover {
+    border-bottom: 3px solid #00ffbf;
+  }
