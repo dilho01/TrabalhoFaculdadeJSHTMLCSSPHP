@@ -2,7 +2,6 @@ function entra(){
   const permittedUsers = [
    { login: 'gabriel', senha: '123' },
   ];
-
   const form = document.querySelector('.registrador');
   const loginInput = document.querySelector('#login');
   const senhaInput = document.querySelector('#senha');
@@ -19,12 +18,13 @@ function entra(){
 
     if (userExists) {
       alert('Bem-vindo!');
-      window.location.href = 'index2.html';
+      window.location.href = 'Vendas.html';
     } else {
       alert('Usuário ou senha incorretos. Por favor, tente novamente.');
     }
   });
 }
+
 
 
 function NaoCadastro() {

@@ -1,0 +1,196 @@
+body{
+    font: 1.5rem sans-serif;
+    font-family:"Lilita One", sans-serif;
+    font-weight: 400px;
+    font-style: normal;
+    margin: 0;
+}
+
+.container-2{
+    width: 1280;
+    max-width: 128vw;
+    margin: auto;
+    text-align: center;
+}
+svg{
+    width: 35px;
+    
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px;
+    padding-top: 10px;
+    padding-bottom: 2px;
+    border-bottom: solid 2px;
+    position: fixed; 
+    width: 96%; 
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+header .icon-car{
+    position: relative;
+    
+}
+
+ header .icon-car span{
+    display: flex;
+    width: 20px;
+    height: 24px;
+    background-color: #ff0000;
+    align-items: center;
+    color: #ffffff;
+    border-radius: 50%;
+    position: absolute;
+    top: 40%;
+    left: 80%; 
+    font-size: 26px;
+ }
+
+ .img {
+    background-image: url('./imag/Imagem\ do\ WhatsApp\ de\ 2024-04-26\ à\(s\)\ 14.22.19_e9cb07ae.jpg'); 
+    background-position: center;
+    background-attachment: fixed;
+    display: block;
+    height: 700px; 
+    border-bottom: solid 2px;
+    animation: slide 20s infinite;
+  }
+  @keyframes slide {
+    0% {
+      background-image: url('./imag/Imagem\ do\ WhatsApp\ de\ 2024-04-26\ à\(s\)\ 14.24.20_97971a33.jpg');
+    }
+    33.33% {
+      background-image: url('./imag/Imagem\ do\ WhatsApp\ de\ 2024-04-26\ à\(s\)\ 14.24.21_cd0e1b74.jpg');
+    }
+    66.67% {
+      background-image: url('./imag/Imagem\ do\ WhatsApp\ de\ 2024-04-26\ à\(s\)\ 14.22.19_e9cb07ae.jpg');
+    }
+    100% {
+      background-image: url('./imag/Imagem\ do\ WhatsApp\ de\ 2024-04-26\ à\(s\)\ 14.24.20_97971a33.jpg');
+    }
+  }
+  .container-3{
+    display:grid;
+    text-align: center;
+
+  }
+  .container-4{
+    display: flex;
+  }
+  .lista .item img{
+    width: 170px;
+    
+  }
+  .lista{
+    display: grid;
+    grid-template-columns: repeat(0, 0.5fr);
+    text-align: center;
+    padding-left: 40px ;
+    padding: 30px;
+  }
+  .lista .item{
+     background-color: #eee;
+     padding: 20px;
+     border-radius: 20px;
+  }
+  .lista .item h2{
+    font-size: 500;
+    font-size: large;
+    
+  }
+  .lista .item .preço{
+    letter-spacing: 4px;
+    font-size: small;
+    
+  }
+  .lista  .item button{
+    background-color: black;
+    color: #eee;
+    padding: 5px 10px;
+    border-radius: 20px;
+    margin-top:  10px;
+    border: none;
+    cursor: pointer;
+  }
+  .cart{
+    width: 400px;
+    background-color: #353030;
+    color: #eee;
+    position: fixed;
+    inset: 0 0 0 auto;
+    display: grid;
+    grid-template-areas:  70px 1fr 70px;
+  }
+  .cart h1{
+    padding: 20px;
+    margin: 0;
+    font-size:x-large;
+  }
+  .cart .btn{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+  }
+.cart .bnt button{
+    background-color: #e8bc0e;
+    border: none;
+    cursor: pointer;
+    position: fixed;
+    bottom: 0%;
+    width: 199px;
+    height: 65px;
+    
+    
+    
+}
+.cart .bnt .fechar{
+    background-color: hsl(0, 0%, 100%);
+    right: 1px;
+}
+
+.cart .cart-lista .item img{
+    width: 90%;
+}
+.cart .cart-lista .item{
+    display: grid;
+    grid-template-columns: 70px 130px 80px 1fr;
+    position: fixed;
+    top: 14%;
+    right: 1%;
+    text-align: center;
+    align-items: center;
+}
+.cart-lista .quantidade span{
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    background-color: #eee;
+    color: #f1acac;
+    border-radius: 50%;
+    cursor: pointer;
+
+}
+.cart-lista .quantidade span:nth-child(2){
+    background-color: transparent; color: #eee;
+}
+.cart-lista{
+    overflow: auto;
+}
+
+.cart-lista::-webkit-scrollbar{
+    width: 0;
+}
+.cart {
+    transition: display 0.5s;
+  }
+  
+  .cart.show {
+    display: block;
+  }
+  
+  .cart.hide {
+    display: none;
+  }
