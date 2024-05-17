@@ -12,6 +12,6 @@ function salvar() {
       return;
     }
   
-    // banco de dados
+    
     alert('Dados salvos com sucesso!');
 }  
