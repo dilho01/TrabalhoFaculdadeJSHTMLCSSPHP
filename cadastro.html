@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro</title>
     <!--CSS-->
-    <link rel="stylesheet" href="./style/mainCadastro.css">
+    <link rel="stylesheet" href="./style/mainCadastr.css">
     <!--font-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,34 +14,44 @@
 <body>
 <div class="container">
     <div class="container-1">
-        <div class="resgistrador">
+        <div class="registrador">
             <h1>Cadastro</h1>
-            <div>
-                <form>
-                    <label for="nome">Nome</label>
-                    <input type="text" name="nome" id="nome">
+            <form action="./dao/formulario.php" method="POST" onsubmit="return validarFormulario()">
+                <div>
+                    <label for="nome">Nme</label>
+                    <input type="text" name="nome" id="nome" required>
                     <label for="sobrenome">Sobrenome</label>
-                    <input type="text" name="nome" id="sobrenome">
-                </form>
-            </div>
-            <div>
-                <form>
-                    <label for="Email">Email</label>
-                    <input type="text" name="email" id="email">
-                    <label for="senha">senha</label>
-                    <input type="password" name="senha" id="senha">
-                </form>
-            </div>
-            <div class="button-container">
-                <button type="button" onclick="voltar()">voltar</button>
-                <button type="button" onclick="salvar()">salvar</button>
-            </div>
+                    <input type="text" name="sobrenome" id="sobrenome">
+                </div>
+                <div>
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" required>
+                    <label for="senha">Senha</label>
+                    <input type="password" name="senha" id="senha" required>
+                </div>
+                <div class="button-container">
+                    <button type="button" onclick="voltar()">Voltar</button>
+                    <button type="submit">Salvar</button>
+                </div>
+            </form>
         </div>    
-    </div>    
+    </div>  
+    <div id="myModal" class="modal"> 
+
+        <!-- Conteúdo do modal --> 
+
+        <div class="modal-content"> 
+
+            <span class="close">&times;</span> 
+
+            <div class="dados-cadastrados" id="dadosCadastrados"></div> 
+
+        </div> 
+
+    </div> 
 </div>
 
-
-    <!--JS-->
-    <script src="./src/mainCadastro.js"></script>
+<!--JS-->
+<script src="./src/mainCadastr.js"></script>
 </body>
 </html>
